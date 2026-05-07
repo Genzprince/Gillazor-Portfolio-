@@ -1,0 +1,176 @@
+================================================================
+         GILLAX WEBSITE - CONTENT UPDATE GUIDE
+================================================================
+
+HOW TO ADD A VIDEO TO PORTFOLIO
+---------------------------------
+1. Open this file:
+   src/data/projects.json
+
+2. Copy this block and paste it before the last ] bracket:
+
+   ,
+   {
+     "id": 5,
+     "title": "Your Video Title Here",
+     "description": "Short description of the video",
+     "category": "gaming",
+     "type": "youtube",
+     "youtubeLink": "https://www.youtube.com/watch?v=PASTE_VIDEO_ID_HERE",
+     "thumbnail": ""
+   }
+
+   NOTE: Change the "id" number to be 1 more than the last video.
+   NOTE: Change "type" to "reels" if it's a YouTube Short or Reel.
+
+3. Save the file. Done!
+
+
+VIDEO TYPE OPTIONS
+------------------
+   "type": "youtube"   --> For regular YouTube videos (horizontal)
+   "type": "reels"     --> For YouTube Shorts / Reels (vertical)
+
+
+HOW TO GET THE YOUTUBE LINK
+-----------------------------
+   Regular Video : Go to the video on YouTube, copy the URL from the browser.
+                   Example: https://www.youtube.com/watch?v=abc123xyz
+   
+   YouTube Short : Go to the Short, copy the URL from the browser.
+                   Example: https://www.youtube.com/shorts/abc123xyz
+
+
+EXAMPLE projects.json FILE
+----------------------------
+[
+  {
+    "id": 1,
+    "title": "Gaming Montage",
+    "description": "Epic gaming highlights with smooth transitions",
+    "category": "gaming",
+    "type": "youtube",
+    "youtubeLink": "https://www.youtube.com/watch?v=abc123",
+    "thumbnail": ""
+  },
+  {
+    "id": 2,
+    "title": "Quick Reel",
+    "description": "Fast-paced 60 second reel",
+    "category": "gaming",
+    "type": "reels",
+    "youtubeLink": "https://www.youtube.com/shorts/xyz456",
+    "thumbnail": ""
+  }
+]
+
+
+================================================================
+         HOW TO UPDATE CLIENT REVIEWS
+================================================================
+
+1. Open this file:
+   src/data/reviews.json
+
+2. Copy this block and paste it before the last ] bracket:
+
+   ,
+   {
+     "id": 4,
+     "name": "Client Full Name",
+     "role": "Their Job / Platform",
+     "review": "What they said about your work...",
+     "rating": 5,
+     "platform": "YouTube",
+     "avatar": "AB"
+   }
+
+   NOTE: "avatar" should be the initials of the client name.
+         Example: "John Doe" --> "JD"
+   NOTE: "rating" is a number from 1 to 5.
+
+
+================================================================
+         HOW TO UPDATE PACKAGES
+================================================================
+
+1. Open this file:
+   src/data/config.json
+
+2. Find the "packages" section and edit the title, features, price, etc.
+
+   Example package block:
+   {
+     "id": 1,
+     "title": "Reels & Shorts",
+     "duration": "Up to 60 seconds",
+     "price": "Rs. 1200",
+     "features": [
+       "Feature one",
+       "Feature two",
+       "Feature three"
+     ],
+     "description": "Short tagline for this package.",
+     "mostPopular": false
+   }
+
+   NOTE: Set "mostPopular": true on only ONE package to highlight it.
+
+
+================================================================
+         HOW TO UPDATE CONTACT INFO
+================================================================
+
+1. Open this file:
+   src/data/config.json
+
+2. Find the "contact" section at the top and update:
+
+   "contact": {
+     "email": "youremail@gmail.com",
+     "phone": "+91-XXXXXXXXXX",
+     "instagram": "your_instagram_handle",
+     "youtube": "@YourYouTubeHandle",
+     "website": "https://yourwebsite.com"
+   }
+
+
+================================================================
+         HOW TO RUN THE WEBSITE LOCALLY
+================================================================
+
+1. Open a terminal in the gillax-frontend-only folder.
+2. Run:  npm install    (only needed the first time)
+3. Run:  npm run dev
+4. Open: http://localhost:3000 in your browser
+
+
+================================================================
+         HOW TO BUILD FOR DEPLOYMENT
+================================================================
+
+1. Run:  npm run build
+2. Upload the "dist" folder to Netlify, Vercel, or any host.
+
+
+================================================================
+         QUICK REFERENCE - FILE LOCATIONS
+================================================================
+
+   Portfolio Videos  -->  src/data/projects.json
+   Client Reviews    -->  src/data/reviews.json
+   Packages & Info   -->  src/data/config.json
+   Contact Page      -->  src/pages/ContactPage.jsx
+   Logo Image        -->  public/logo.png
+
+
+================================================================
+         TIPS
+================================================================
+
+   - Always keep a comma between items in the JSON list.
+   - The last item in the list should NOT have a comma after it.
+   - If the website breaks after editing, undo your last change.
+   - Use https://jsonlint.com to check if your JSON is valid.
+
+================================================================

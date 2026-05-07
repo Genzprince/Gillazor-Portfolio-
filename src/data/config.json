@@ -1,0 +1,79 @@
+{
+  "site": {
+    "name": "GillaX",
+    "tagline": "We make visuals move",
+    "description": "Professional video editing and motion graphics services"
+  },
+  "contact": {
+    "email": "gillaxediting@gmail.com",
+    "phone": "+91-96460 28153",
+    "instagram": "gilla_edit",
+    "youtube": "@Gilla_x",
+    "website": "https://gillax.onrender.com/"
+  },
+  "services": [
+    {
+      "id": 1,
+      "title": "Video Editor",
+      "description": "Professional video editing for all your content needs",
+      "icon": "🎬"
+    },
+    {
+      "id": 2,
+      "title": "Motion Graphics",
+      "description": "Dynamic animations that bring your ideas to life",
+      "icon": "⚡"
+    },
+    {
+      "id": 3,
+      "title": "3D Animation",
+      "description": "Immersive 3D experiences and animations",
+      "icon": "🎯"
+    }
+  ],
+  "packages": [
+    {
+      "id": 1,
+      "title": "Reels & Shorts",
+      "duration": "Up to 60 seconds",
+      "price": "Rs. 1200",
+      "features": [
+        "Snappy cuts + on-beat pacing",
+        "Dynamic captions & trendy effects",
+        "Basic color grade + sound polish",
+        "2 revision rounds",
+        "Default Raw file export"
+      ],
+      "description": "Perfect for creators who want scroll-stopping short-form edits."
+    },
+    {
+      "id": 2,
+      "title": "Long Format",
+      "subtitle": "(YouTube / Interviews / Podcasts)",
+      "duration": "Up to 10–15 minutes",
+      "price": "Rs. 4000",
+      "features": [
+        "Multi-cam sync & clean transitions",
+        "Color correction & light grading",
+        "Audio cleanup + background music",
+        "2–3 revisions",
+        "Thumbnail included (optional)"
+      ],
+      "description": "For creators who want polished storytelling that holds attention.",
+      "mostPopular": true
+    },
+    {
+      "id": 3,
+      "title": "Motion Graphics / Explainers",
+      "price": "Rs. 5000",
+      "features": [
+        "Logo animations / lower thirds / infographics",
+        "Text animations & visual effects",
+        "Sound design + music sync",
+        "2–3 revisions",
+        "4K export quality"
+      ],
+      "description": "Ideal for brands and creators who want their visuals to pop."
+    }
+  ]
+}
